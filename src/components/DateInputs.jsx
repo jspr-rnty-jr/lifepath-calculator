@@ -1,6 +1,8 @@
 const DateInputs = () => {
-    const currentYear = new Date().getUTCFullYear();    
+    const currentYear = new Date().getFullYear();    
     const years = Array(currentYear - (currentYear - 50)).fill('').map((_, idx) => currentYear - idx);
+
+    const newz = new Date();
     return (
      <div>
         <div>
@@ -22,7 +24,11 @@ const DateInputs = () => {
         </div>
         <div>
             <select name="date" id="date">
-                
+                {
+                    <option>
+                        {newz.setDate(10)}
+                    </option>
+                }
             </select>
         </div>
         <div>
