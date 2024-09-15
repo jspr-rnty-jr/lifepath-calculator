@@ -8,7 +8,7 @@
 header {
   width: 100%;
   height: 100%;
-  background-image: url('./assets/header-background.jpg');
+  background-image: url('./assets/header-background.jpg'); 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,9 +26,22 @@ header {
   color: whitesmoke;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.dateInputs {
+  display: flex;
+}
+
 @media only screen and (min-width: 600px){
   .main-nav {
-    height: 100px;
+    height: 75px;
   }
   .nav-header {
     justify-self: start;
